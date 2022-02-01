@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+body {
+    background: aqua;
+    text-transform: capitalize;
+}
+
+p,
+a {
+    text-decoration: none;
+    font-family: 'DM Serif Display', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#top {
+    background-color: black;
+}
+
+.contact p {
+    font-size: 1.5rem;
+}
+
+.contact p a {
+    text-decoration: none;
+    color: azure;
+}
+
+nav .top-logo {
+    height: 6rem;
+}
+
+nav .o-2 {
+    transition: ease-out 0.5s;
+}
+
+nav .o-2:hover {
+    box-shadow: inset 200px 0 0 0 aliceblue;
+    color: #000;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+
+.social-media a {
+    transition: 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.social-media a:hover {
+    transform: translate(9px, 1px) skew(10deg, -3deg) scale(1.1);
+}
+
+.dropdown-menu a {
+    transition: 0.3s;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.o-1 {
+    order: 1;
+}
+
+.o-2 {
+    order: 2;
+}
+
+.slider {
+    width: 100%;
+    background: url("bg.jpg") top center;
+    background-size: 100% 100%;
+    height: 60vh;
+    background-attachment: fixed;
+}
+
+.slider h1,
+h2 {
+    color: aqua;
+}
+
+
+/* cards section------------------------------------------------------------ */
+
+#cards {
+    position: relative;
+    top: -9rem;
+}
+
+#cards .card {
+    background: #000;
+}
+
+.bg-black h1,
+h2,
+h3 {
+    color: aliceblue;
+}
+
+
+/* end-------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 992px) {
+    .offcanvas {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .side-nav {
+        display: none;
+    }
+    nav .o-2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slider h1,
+    a,
+    h2 {
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        background: url('bg2.jpg');
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    .slider h2,
+    a {
+        color: black;
+    }
+    #hover img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #top {
+        display: none;
+    }
+    @media screen and (max-width:425px) {
+        nav .o-1 {
+            order: 1;
+        }
+    }
+}
+
+#package .card-header {
+    transition: 0.4s;
+    z-index: 1;
+}
+
+#package .card-body {
+    background: aliceblue;
+}
+
+#package .card:hover {
+    border: 1px solid #000;
+}
+
+#package .card:hover .btn {
+    transition: all 0.4s;
+}
+
+#package .card:hover .btn {
+    background: aliceblue;
+}
+
+#package .card:hover a {
+    color: #000;
+}
+
+#package .card:hover .card-header {
+    cursor: pointer;
+    color: white;
+}
+
+#package .card-header::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    opacity: 0;
+    content: "";
+    background: #000;
+}
+
+#package .card:hover .card-header:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    top: 0%;
+    bottom: 80%;
+    opacity: 1;
+    z-index: -1;
+}
+
+.temp {
+    height: 150vh;
+}
+
+#hover {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#hover img {
+    transition: 0.3s;
+}
+
+#hover img:hover {
+    transform: scale(1.5);
+}
+
+#list-tab a {
+    border-left: 2px solid #055160;
+}
+
+.wpb_text_column {
+    overflow-y: auto;
+    max-height: 402px;
+    min-height: 402px;
+}
+
+@media screen and (max-width:1000px) {
+    .social-media {
+        display: none;
+    }
+    .o-1 {
+        order: 2;
+    }
+    .o-2 {
+        order: 1;
+    }
+    #half {
+        width: 100%;
+    }
+}
+
+
+/* counting animation */
+
+.count-box svg {
+    font-size: 5rem;
+    position: relative;
+    top: -29px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.count-box p {
+    font-size: 2rem;
+}
+
+.count-box {
+    background: rgb(224, 224, 224);
+    border-radius: 10px;
+}
+
+
+/* end---------------------------------------------------------- */
+
+#sticky-logo {
+    position: sticky;
+    top: 0;
+    filter: invert(10);
+}
+
+
+/* services----------------------------------------------------------------- */
+
+#services {
+    background: aliceblue;
+    border: #000 1px solid;
+    border-radius: 12px;
+}
+
+#services .top-logo {
+    height: 5rem;
+}
+
+#service {
+    transition: all ease-in-out 0.3s;
+    margin-top: 1.5rem;
+}
+
+#service:hover {
+    background: rgb(12, 5, 5);
+    border-radius: 10px;
+}
+
+#service:hover img {
+    background: #fff;
+    border-radius: 50%;
+}
+
+#service:hover h2 {
+    color: #fff;
+}
+
+#service:hover p {
+    color: #fff;
+}
+
+.bg-black {
+    background: #000;
+    border-radius: 10px;
+}
+
+.bg-black p {
+    color: rgb(114, 114, 114);
+}
+
+
+/* end--------------------------------------------------------------------------- */
+
+.list-group-item-info {
+    background: aliceblue;
+    transition: all 0.4s ease;
+}
+
+.list-group-item-info.list-group-item-action.active {
+    color: aliceblue;
+    background-color: #000;
+    border-color: aliceblue;
+    border-left-color: rgb(5, 81, 96);
+}
+
+
+/* offcanvas css--------------------------------------------------------------------------------------- */
+
+.offcanvas {
+    background: #000;
+}
+
+.offcanvas ul li a {
+    color: aliceblue;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: aliceblue;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: aliceblue;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: aliceblue;
+}
+
+.offcanvas ul li a {
+    color: black;
+}
+
+.offcanvas .dropdown-item:focus,
+.offcanvas .dropdown-item:hover {
+    color: aliceblue;
+    background-color: #000;
+}
+
+.nav-item a input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: rgb(29, 29, 29);
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+}
+
+.nav-item a .search-icon {
+    position: relative;
+    top: 2.7rem;
+    left: 0.5rem;
+    z-index: 2;
+    font-size: 1.7rem;
+}
+
+
+/* button danger css--------------------------------------------------------------- */
+
+.btn-danger {
+    background: #000;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+.btn-danger:hover {
+    color: #000;
+    background-color: aliceblue;
+    border-color: #000;
+}
+
+.btn-danger a {
+    color: aliceblue;
+}
+
+.btn-danger:hover a {
+    color: #000;
+}
+
+.btn-check:focus+.btn-danger,
+.btn-danger:focus {
+    color: #000;
+    background-color: aliceblue;
+    border-color: #000;
+    box-shadow: none;
+}
+
+.btn-check:active+.btn-danger,
+.btn-check:checked+.btn-danger,
+.btn-danger.active,
+.btn-danger:active,
+.show>.btn-danger.dropdown-toggle {
+    color: #000;
+    background-color: aliceblue;
+    border-color: #000;
+    box-shadow: none;
+}
+
+.btn-check:active+.btn-danger:focus,
+.btn-check:checked+.btn-danger:focus,
+.btn-danger.active:focus,
+.btn-danger:active:focus,
+.show>.btn-danger.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+
+/* enddddd--------------------------------------------------------------------------------- */
+
+.text-white {
+    color: rgb(119, 119, 119);
+}
+
+#two-side p {
+    color: rgba(240, 248, 255, 0.589);
+}
+
+#two-side .d-flex {
+    flex-direction: column;
+}
+
+
+/* .count-box---------------------------------------------------------------- */
+
+.count-box {
+    background: #000;
+}
+
+.count-box h1 {
+    color: aliceblue;
+}
+
+.count-box p {
+    color: rgba(240, 248, 255, 0.589);
+}
+
+
+/* end------------------------------------------------------------------------------ */
+
+
+/* projects and trainig-------------------------------------------------------------------- */
+
+#half h2 {
+    color: rgba(240, 248, 255, 0.589);
+}
+
+.special .skill-box {
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 0.5rem;
+}
+
+
+/* about us packages=-============================================================== */
+
+#package .card-header::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    opacity: 0;
+    content: "";
+    background: #000;
+}
+
+#package #about .card:hover .card-header:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    top: 0%;
+    bottom: 82%;
+    opacity: 1;
+    z-index: -1;
+}
+
+#space {
+    background: url('space.jpg');
+    transition: all 0.4s;
+    background-attachment: fixed;
+    animation: rotate 40s ease alternate infinite;
+    height: 20vh;
+    background-size: 50% 50%;
+}
+
+@keyframes rotate {
+    0% {
+        background-position: 0;
+    }
+    50% {
+        background-position: -600px -600px;
+    }
+    100% {
+        background-position: 2000px 2000px;
+    }
+}
+
+
+/* contact us ===========================================================
+ */
+
+.bg {
+    background: #000;
+}
+
+#contact #space {
+    height: 800px;
+}
+
+.card1:hover .img {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.card1:hover .text {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.img {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: translate(0);
+    border-radius: 12px;
+}
+
+#about-mb {
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+#place-card svg {
+    font-size: 4rem;
+}
+
+#place-card {
+    border: none;
+}
+
+
+/* placement css===================================================================== */
+
+.card-p {
+    border-bottom: 2px solid rgb(239, 52, 34);
+    border-top: 2px solid #ef3422;
+    border-radius: 12px;
+}
+
+.card-p img {
+    transition: 0.2s ease-in-out;
+}
+
+.line_1 .card-p:hover img {
+    transform: translate(15%);
+}
+
+.line_2 .card-p:hover img {
+    transform: translate(-15%);
+}
+
+.info {
+    background: aliceblue;
+}
+
+.card-2 {
+    border-right: 1px solid #ef3422;
+    border-left: 1px solid #ef3422;
+    border-radius: 3px;
+    transition: 0.2s ease-in;
+}
+
+.card-2:hover {
+    box-shadow: 0 0 2px #ef3422, 0 0 2px aliceblue, 0 0 2px aliceblue, 0 0 2px #ef3422;
+}
+
+
+/* service css=============================================== */
+
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#online .col-lg-6,
+#online .col-4 {
+    transition: 0.3s ease-in-out;
+}
+
+#online .col-lg-6:hover {
+    background: #000;
+    border-radius: 12px;
+}
+
+#online .col-4:hover {
+    background: aliceblue;
+    border-radius: 12px;
+}
+
+@media screen and (max-width:1000px) {
+    #width img {
+        width: 100%;
+    }
+}
+
+#offline #hover {
+    border-radius: 0;
+}
+
+#offline #hover:hover img {
+    transform: scale(1.2);
+}
+
+#fill {
+    filter: invert(10);
+}
+
+
+/* return top button================================================================== */
+
+#button {
+    position: fixed;
+    right: 0.5rem;
+    top: 80vh;
+    z-index: 100;
+    background: #ef3422;
+    opacity: 0.7;
+    transition: ease-in-out 0.2s;
+    border-radius: 50%;
+}
+
+#button svg {
+    font-size: 3rem;
+    transition: ease-in-out 0.s;
+    color: #000;
+}
+
+#button:hover svg {
+    color: aliceblue;
+}
+
+#button:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0 0 20px aliceblue, 0 0 20px aliceblue, 0 0 20px aliceblue, 0 0 20px aliceblue;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+.text-darks {
+    color: #000;
+}
+
+#service:hover .text-darks {
+    color: aliceblue;
+}
+
+
+/* Styles for the content section */

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: aliceblue;
+    height: 350px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -2rem;
+}
+
+footer .social-media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    flex-wrap: wrap;
+    z-index: 11;
+}
+
+.social-media div a {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.social-media div svg {
+    transition: 0.4s;
+}
+
+.social-media div:hover svg {
+    transform: translate(0, -8px) skew(5deg, -5deg);
+}
+
+#icon {
+    height: 3rem;
+}
+
+footer .wave {
+    position: absolute;
+    top: -10vh;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background: url('wave-white.png');
+    background-size: 1000px 100px;
+    animation: footer 2s ease infinite;
+}
+
+footer .wave#wave1 {
+    z-index: 10;
+    opacity: 1;
+    bottom: 0;
+    animation: wave1 4s ease-out infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 9;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: wave2 4s ease-in infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 10;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: wave1 3s ease-out infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 9;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: wave2 3s ease-in infinite;
+}
+
+@keyframes wave1 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}

@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.side-nav {
+    width: 1.8rem;
+    position: fixed;
+    background: transparent;
+    left: 0;
+    top: 0vh;
+    height: 100vh;
+    padding: 20px 10px;
+    transition: width 0.5s, height 0.3s, box-shadow 0.5s;
+    z-index: 12;
+}
+
+.side-nav:hover {
+    height: 100vh;
+    width: 400px;
+    box-shadow: inset 0 100vh 0 0 #000;
+    overflow-y: scroll;
+}
+
+.side-nav:hover .menu {
+    display: none;
+}
+
+.side-nav:hover .menu p {
+    color: black;
+}
+
+.side-nav:hover .nav-logo {
+    animation: v 0.5s 1 ease-out forwards;
+}
+
+.side-nav:hover .nav-links {
+    animation: v 0.5s 1 ease-out forwards;
+}
+
+@keyframes v {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+.nav-links {
+    visibility: hidden;
+    transition: all 0.8s ease;
+}
+
+.nav-brand {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.nav-brand .nav-logo {
+    width: 80%;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.nav-brand .nav-logo svg {
+    font-size: 2.5rem;
+    color: aliceblue;
+    margin-right: 1.2rem;
+}
+
+.nav-brand .nav-logo {
+    font-size: 1.7rem;
+    color: aliceblue;
+}
+
+.nav-links ul {
+    margin-top: 3rem;
+}
+
+.nav-links ul li {
+    list-style: none;
+    position: relative;
+    height: 50px;
+    width: 80%;
+    margin: 10px 5px;
+    line-height: 50px;
+    padding: 0 20px;
+    transition: all ease 0.5s;
+}
+
+.nav-links ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#dropdownMenuButton {
+    box-shadow: none;
+    border: none;
+}
+
+.nav-links ul li:hover .text-white {
+    color: black;
+}
+
+.nav-links ul li:hover .dropdown a {
+    color: black;
+}
+
+.nav-links ul li:hover {
+    background: aliceblue;
+    border-radius: 12px;
+    color: black;
+}
+
+.nav-links ul li:hover svg:not(.search-icon) {
+    color: black;
+}
+
+.nav-links ul li:hover a {
+    color: black;
+}
+
+.nav-links ul li svg {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.nav-links .link {
+    margin-left: 10px;
+}
+
+.nav-links ul li input {
+    border: none;
+    outline: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    left: 0;
+    top: 0;
+    background: rgb(29, 29, 29);
+    color: aliceblue;
+    font-size: 1.2rem;
+    padding-left: 50px;
+}
+
+.nav-links ul .search-icon {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    z-index: 2;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: -0.7rem;
+}
+
+.dropdown a {
+    transition: 0.4s all ease;
+}
+
+.side-nav .dropdown-item:focus,
+.side-nav .dropdown-item:hover {
+    background-color: rgb(87, 88, 88);
+}
+
+.menu {
+    position: absolute;
+    top: 1.2rem;
+    right: -1.1rem;
+    transform: rotate(-90deg);
+    background: #000;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.menu p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aliceblue;
+    margin-bottom: 0;
+}
+
+#active {
+    background: aliceblue;
+}
+
+#active a {
+    color: #000;
+}
+
+form label {
+    color: aliceblue;
+}
