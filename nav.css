@@ -35,11 +35,11 @@ a {
 }
 
 .side-nav:hover .nav-logo {
-    animation: v 0.3s 1 ease-out forwards;
+    animation: v 0.2s 1 ease-out forwards;
 }
 
 .side-nav:hover .nav-links {
-    animation: v 0.3s 1 ease-out forwards;
+    animation: v 0.2s 1 ease-out forwards;
 }
 
 @keyframes v {
