@@ -15,15 +15,14 @@ a {
     top: 0vh;
     height: 100vh;
     padding: 20px 10px;
-    transition: width 0.5s, background 0.5s;
-    z-index: 12;
+    transition: width 0.3s, background 0.5s;
+    border-radius: 12px;
 }
 
 .side-nav:hover {
     height: 100vh;
     width: 400px;
-    background:#000;
-    overflow-y: scroll;
+    background: #000;
 }
 
 .side-nav:hover .menu {
@@ -35,11 +34,11 @@ a {
 }
 
 .side-nav:hover .nav-logo {
-    animation: v 0.2s 1 ease-out forwards;
+    animation: v 0.3s 1 ease-out forwards;
 }
 
 .side-nav:hover .nav-links {
-    animation: v 0.2s 1 ease-out forwards;
+    animation: v 0.3s 1 ease-in-out forwards;
 }
 
 @keyframes v {
@@ -69,7 +68,6 @@ a {
 .nav-brand .nav-logo {
     width: 80%;
     visibility: hidden;
-    
 }
 
 .nav-brand .nav-logo svg {
@@ -95,7 +93,6 @@ a {
     margin: 10px 5px;
     line-height: 50px;
     padding: 0 20px;
-    transition: ease 0.5s;
 }
 
 .nav-links ul li a {
@@ -194,7 +191,6 @@ a:not([href]):not([class]):hover {
     background: #000;
     border-radius: 10px;
     transition: all 0.5s ease;
-    padding: 0 0.5rem 0 0.5rem;
 }
 
 .menu p {
@@ -202,16 +198,4 @@ a:not([href]):not([class]):hover {
     font-weight: bold;
     color: aliceblue;
     margin-bottom: 0;
-}
-
-#active {
-    background: aliceblue;
-}
-
-#active a {
-    color: #000;
-}
-
-form label {
-    color: aliceblue;
 }
