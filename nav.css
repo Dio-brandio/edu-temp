@@ -15,7 +15,7 @@ a {
     top: 0vh;
     height: 100vh;
     padding: 20px 10px;
-    transition: width 0.5s, height 0.3s, background 0.5s;
+    transition: width 0.5s, background 0.5s;
     z-index: 12;
 }
 
@@ -35,11 +35,11 @@ a {
 }
 
 .side-nav:hover .nav-logo {
-    animation: v 0.5s 1 ease-out forwards;
+    animation: v 0.3s 1 ease-out forwards;
 }
 
 .side-nav:hover .nav-links {
-    animation: v 0.5s 1 ease-out forwards;
+    animation: v 0.3s 1 ease-out forwards;
 }
 
 @keyframes v {
@@ -95,7 +95,7 @@ a {
     margin: 10px 5px;
     line-height: 50px;
     padding: 0 20px;
-    transition: all ease 0.5s;
+    transition: ease 0.5s;
 }
 
 .nav-links ul li a {
