@@ -93,6 +93,7 @@ a {
     margin: 10px 5px;
     line-height: 50px;
     padding: 0 20px;
+    transition: background 0.5s;
 }
 
 .nav-links ul li a {
