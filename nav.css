@@ -210,4 +210,14 @@ a:not([href]):not([class]):hover {
     font-weight: bold;
     color: aliceblue;
     margin-bottom: 0;
+}#active {
+    background: aliceblue;
+}
+
+#active a {
+    color: #000;
+}
+
+form label {
+    color: aliceblue;
 }
