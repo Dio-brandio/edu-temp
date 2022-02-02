@@ -33,7 +33,17 @@ a {
 .side-nav:hover .menu p {
     color: black;
 }
+#active {
+    background: aliceblue;
+}
 
+#active a {
+    color: #000;
+}
+
+form label {
+    color: aliceblue;
+}
 .side-nav:hover .nav-logo {
     animation: v 0.3s 1 ease-out forwards;
 }
