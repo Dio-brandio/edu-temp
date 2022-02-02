@@ -24,6 +24,7 @@ a {
     height: 100vh;
     width: 400px;
     background: #000;
+    overflow-y:scroll;
 }
 
 .side-nav:hover .menu {
